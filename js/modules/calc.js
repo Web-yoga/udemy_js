@@ -108,4 +108,4 @@ function calc(){
 	calcTotal();
 }
 
-module.exports = calc;
+export default calc;
