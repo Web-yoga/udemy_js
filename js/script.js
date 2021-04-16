@@ -1,13 +1,12 @@
+inport tabs from './modules/tabs';
+inport modal from './modules/modal';
+inport timer from './modules/timer';
+inport cards from './modules/cards';
+inport calc from './modules/calc';
+inport forms from './modules/forms';
+inport slider from './modules/slider';
+
 window.addEventListener('DOMContentLoaded', function() {
-
-    const   tabs = require('./modules/tabs'),
-            modal = require('./modules/modal'),
-            timer = require('./modules/timer'),
-            cards = require('./modules/cards'),
-            calc = require('./modules/calc'),
-            forms = require('./modules/forms'),
-            slider = require('./modules/slider');
-
     tabs();
     modal();
     timer();
@@ -15,5 +14,4 @@ window.addEventListener('DOMContentLoaded', function() {
     calc();
     forms();
     slider();
-
 });
