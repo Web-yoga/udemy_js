@@ -11,7 +11,7 @@ function openModal() {
      clearInterval(modalTimerId);
     }
 
-function modal(){
+function modal(triggerSelector, modalSelector){
      // Modal
 
      const modalTrigger = document.querySelectorAll('[data-modal]'),
