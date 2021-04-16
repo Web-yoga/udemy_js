@@ -5,10 +5,13 @@ inport cards from './modules/cards';
 inport calc from './modules/calc';
 inport forms from './modules/forms';
 inport slider from './modules/slider';
+inport {openModal} from './modules/modal';
 
 window.addEventListener('DOMContentLoaded', function() {
+    const modalTimerId = setTimeout(() => openModal('.modal', modalTimerId), 300000);
+    
     tabs();
-    modal('[data-modal]', '.modal');
+    modal('[data-modal]', '.modal', modalTimerId);
     timer();
     cards();
     calc();
