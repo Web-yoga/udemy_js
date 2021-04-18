@@ -1,6 +1,6 @@
+import {getResource} from '../services/services';
+
 function cards(){
-
-
     // Используем классы для создание карточек меню
 
     class MenuCard {
@@ -44,16 +44,6 @@ function cards(){
         }
     }
 
-	const getResource = async (url, data) => {
-		const res = await fetch(url);
-		
-		if(!res.ok){
-			throw new Error(`Could not fetch ${url}, status: ${res.status}`);
-		}
-		
-		return await res.json();
-	};
-	
 	getResource('http://localhost:3000/menu')
 	.then(data => {
 		data.forEach(({img, altimg, title, descr, price}) =>{
@@ -80,9 +70,11 @@ function cards(){
 			document.querySelector('.menu .container').append(element);
 		});
 	} */
+
+    /*
 	axios.get('http://localhost:3000/menu')
 	.then(data => console.log(data));
-	
+	*/
 }
 
 export default cards;
